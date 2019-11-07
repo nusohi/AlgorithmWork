@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Checkerboard",
+            "request": "launch",
+            "mainClass": "app.Checkerboard",
+            "projectName": "algorithm"
+        }
+    ]
+}
