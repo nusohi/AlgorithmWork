@@ -3,19 +3,19 @@
  * @Author: nuso
  * @LastEditors: nuso
  * @Date: 2019-11-06 10:15:01
- * @LastEditTime: 2019-11-07 16:35:32
+ * @LastEditTime: 2019-11-24 14:19:24
  */
 package app;
 
 public class Checkerboard {
     public static void main(String args[]) {
         int length = 8;                     // 棋盘长度
-        Pos special = new Pos(0, 0);        // 特殊方格位置
+        Pos special = new Pos(4, 4);        // 特殊方格位置
         
         int[][] board = new int[length][length];
         board[special.x][special.y] = -1;   // 特殊方格：-1
 
-        CoverBoard(board, new Pos(0, 0), new Pos(0, 0), length);
+        CoverBoard(board, new Pos(0, 0), special, length);
         ShowBoard(board);
     }
 
